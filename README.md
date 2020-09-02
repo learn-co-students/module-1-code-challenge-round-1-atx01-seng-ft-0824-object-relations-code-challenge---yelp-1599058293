@@ -47,34 +47,43 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Customer
 
 - `Customer#initialize`
-  - Customer should be initialized with a given name and family name, both strings (i.e., first and last name, like George Washington)"
+  - Customer should be initialized with a given name and family name, both strings (i.e., first and last name, like George Washington)" 
+  #done
 - `Customer#given_name`
   - returns the customer's given name
-  - should be able to change after the customer is created
+  - should be able to change after the customer is created  #done
 - `Customer#family_name`
   - returns the customer's family name
   - should be able to change after the customer is created
+  #done
 - `Customer#full_name`
   - returns the full name of the customer, with the given name and the family name concatenated, Western style.
+  #done
 - `Customer.all`
   - returns **all** of the customer instances
+  #done
 
 #### Restaurant
 
 - `Restaurant#initialize`
   - Restaurants should be initialized with a name, as a string
+  #done
 - `Restaurant#name`
   - returns the restaurant's name
   - should not be able to change after the restaurant is created
+  #done
 
 #### Review
 
 - `Review#initialize`
   - Reviews should be initialized with a customer, restaurant, and a rating (a number)
+  #done
 - `Review#rating`
   - returns the rating for a restaurant.
+  #done
 - `Review.all`
   - returns all of the reviews
+  #done
 
 ### Object Relationship Methods
 
@@ -83,23 +92,29 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Review#customer`
   - returns the customer object for that review
   - Once a review is created, should not be able to change the customer
+  #done
 - `Review#restaurant`
   - returns the restaurant object for that given review
   - Once a review is created, should not be able to change the restaurant
+  #done
 
 #### Restaurant
 
 - `Restaurant#reviews`
   - returns an array of all reviews for that restaurant
+  #done
 - `Restaurant#customers`
   - Returns a **unique** list of all customers who have reviewed a particular restaurant.
-
+#done
 #### Customer
 
 - `Customer#restaurants`
   - Returns a **unique** array of all restaurants a customer has reviewed
+#done
 - `Customer#add_review(restaurant, rating)`
   - given a **restaurant object** and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
+  #done
+
 
 ### Aggregate and Association Methods
 
@@ -107,16 +122,20 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 - `Customer#num_reviews`
   - Returns the total number of reviews that a customer has authored
+  #done
 - `Customer.find_by_name(name)`
   - given a string of a **full name**, returns the **first customer** whose full name matches
+  #done
 - `Customer.find_all_by_given_name(name)`
   - given a string of a given name, returns an **array** containing all customers with that given name
+  #done
 
 #### Restaurant
 
 - `Restaurant#average_star_rating`
   - returns the average star rating for a restaurant based on its reviews
   - Reminder: you can calculate the average by adding up all the ratings and dividing by the number of ratings
+  #done
 
 ## Rubric
 
