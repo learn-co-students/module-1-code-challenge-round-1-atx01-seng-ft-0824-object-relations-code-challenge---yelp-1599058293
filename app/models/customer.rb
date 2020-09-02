@@ -35,10 +35,13 @@ class Customer
   end
 
   def num_reviews
-    rev = Review.all.select {|review| review.customer == self}
+    rev = Review.all.select do |review|
+      review.customer == self
+    end	
     rev.count
   end
 
+  
   def self.find_by_name(name)
     self.all.select {|review| review.full_name== name}
   end
