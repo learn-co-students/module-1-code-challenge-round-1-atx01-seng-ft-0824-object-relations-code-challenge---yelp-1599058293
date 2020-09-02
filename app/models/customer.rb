@@ -25,6 +25,7 @@ class Customer
         c << review.restaurant
       end
     end
+    # binding.pry
     c.uniq
   end
 
@@ -34,17 +35,12 @@ class Customer
   end
 
   def num_reviews
-    rev = Review.all.select do |review|
-      review.customer == self
-    end
+    rev = Review.all.select {|review| review.customer == self}
     rev.count
   end
 
   def self.find_by_name(name)
-    self.all.select do |review|
-      # binding.pry
-      "#{review.given_name} #{review.family_name}" == name
-    end
+    self.all.select {|review| review.full_name== name}
   end
 
   def self.find_all_by_given_name(name)
